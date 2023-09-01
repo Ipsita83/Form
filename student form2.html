@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            height: 100vh;
+            width: 100vw;
+            background-image: url("night3.jpg");
+            background-size: cover;
+        }
+        .form{
+            height: 550px;
+            width: 300px;
+           color: white;
+           text-align: center;
+           position: relative;
+           left: 610px;
+           right: 600px;
+           top: 100px;
+           box-shadow: -5px -5px 10px black,5px 5px 10px black;
+            background: transparent;
+            border: 7px solid rgba(255,255,255,0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            align-items: center;
+        }
+    </style> 
+</head>
+<body>
+    <section>
+        <div class="form">
+            <h1 style="text-decoration: underline;"><b>STUDENT FORM</b></h1>
+            <br>
+            NAME:<input type="text"placeholder="Enter Your Name">
+            <br> <br>
+            ROOL NO:<input type="text"placeholder="Enter Your Rool No.">
+            <br><br>
+            BRANCH:<input type="text"placeholder="Enter Your Branch Name">
+            <br><br>
+            PROG. LANGUAGE:<select name="programming language" id="programming language"> 
+                <option value=""selected></option>
+                <option value="c">c</option>
+                <option value="python">python</option>
+                <option value="java">java</option>
+            </select>
+            <br><br>
+           SECTION:<label for="sectionid 1">
+                <input type="radio" value="section 1" name="section" id="sectionid 1">CSE 1
+            </label>
+            
+            <label for="sectionid 2">
+                <input type="radio" value="section 2" name="section" id="sectionid 2">CSE 2
+            </label>
+            
+            <label for="sectionid 3">
+                <input type="radio" value="section 3" name="section" id="sectionid 3">CSE 3
+            </label>
+            <br><br>
+            
+            GROUP:<label for="groupid 1">
+                <input type="radio" value="group a" name="group" id="groupid 1">Group A
+            </label>
+            
+            <label for="groupid 2">
+                <input type="radio" value="group b" name="group" id="groupid 2">Group B
+            </label>
+            <br><br>
+            
+            GENDER:<label for="gender 1">
+                <input type="radio" value="Male" name="gender" id="gender 1">Male
+            </label>
+            <label for="gender 2">
+                <input type="radio" value="Female" name="gender" id="gender 2">Female
+            </label>
+            <br><br>
+            <label for="">
+            D.O.B:<input type="date"name="">
+            </label>
+            <br><br>
+           <label for="telNo">MOB:</label>
+            <input id="telNo" name="telNo" type="tel" placeholder=" Enter your Mobile No." />
+            <br></br>
+            EMAIL:<input type="email"placeholder="Enter Your email id">
+            <br><br>
+            <input style="background-color: rgb(66, 245, 6);" type="submit"value="SUBMIT NOW" NAME="MYDATA">
+                
+            <input style="background-color: rgb(167, 32, 34);" type="reset"value="RESET NOW"> 
+            <br><br>
+            <label for="">
+            <textarea name="explain" id="explain" cols="30" rows="5" placeholder="Any Querry ?"></textarea>
+            </label>
+            <br><br>    
+        </div>
+    </section>
+</body>
+</html>
